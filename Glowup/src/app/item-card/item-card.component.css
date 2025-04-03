@@ -1,0 +1,65 @@
+.item-card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.item-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.default-image {
+  opacity: 1;
+}
+
+.hover-image {
+  opacity: 0;
+}
+
+.image-container:hover .default-image {
+  opacity: 0;
+}
+
+.image-container:hover .hover-image {
+  opacity: 1;
+}
+
+.item-details {
+  padding: 15px;
+  text-align: left;
+}
+
+.item-name {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.item-price {
+  font-size: 1.2rem;
+  color: #007BFF;
+  margin: 5px 0;
+}
+
+.item-trivia {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 10px;
+}
