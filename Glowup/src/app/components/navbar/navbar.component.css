@@ -1,0 +1,64 @@
+.navbar {
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    padding-right: 15%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-links a {
+    margin-left: 20px;
+    margin-right: 10%;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .nav-links a.active {
+    color: #007bff;
+  }
+
+  .glowing-text {
+    margin-left: 2%;
+    margin-top: 1%;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff; /* Keep text white */
+    animation: neonGlow 4s ease-in-out infinite alternate; /* Slower animation */
+  }
+  
+  @keyframes neonGlow {
+    0% {
+      text-shadow:
+        0 0 80px #3c225f,
+        0 0 160px #2e1385,
+        0 0 240px #0e16b6,
+        0 0 320px #19314e,
+        0 0 400px #082853;
+    }
+    50% {
+      text-shadow:
+        0 0 80px #204e30,
+        0 0 160px #26503e,
+        0 0 240px #10554a,
+        0 0 320px #194540,
+        0 0 400px #164438;
+    }
+    100% {
+      text-shadow:
+        0 0 80px #311753,
+        0 0 160px #2e0aa4,
+        0 0 240px #1f248c,
+        0 0 320px #0b498f,
+        0 0 400px #0c2342;
+    }
+  }
+  
+  
+  
+  
+  
