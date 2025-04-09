@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ItemCardComponent } from './components/item-card/item-card.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer-component/footer.component';
 
 @Component({
   selector: 'app-root',
-  imports: [NavbarComponent,RouterOutlet,ItemCardComponent,CommonModule],
+  imports: [NavbarComponent,RouterOutlet,ItemCardComponent,CommonModule,FooterComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

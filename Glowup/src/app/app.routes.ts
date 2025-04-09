@@ -8,7 +8,7 @@ export const routes: Routes = [
   // { path: 'home', component: HomeComponent },
   // { path: 'shop', component: ShopComponent },
   // { path: 'contact', component: ContactComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' } 
+  { path: '', redirectTo: '', pathMatch: 'full' } 
 ];
 
 @NgModule({
