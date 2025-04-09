@@ -1,6 +1,7 @@
 .navbar {
     background-color: #121212;
     display: flex;
+    color: white;
     justify-content: space-between;
     align-items: center;
     padding: 12px 24px;
@@ -8,13 +9,32 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+     /* box-shadow: inset 0 0 15px 20px #000707,
+                 inset 0 0 30px 40px #01070d; */
+  animation: navbarGlow 5s ease-in-out infinite alternate;
   }
+
+  /* @keyframes navbarGlow {
+    0% {
+      box-shadow: inset 0 0 100px 2px #000a15,
+                  inset 0 0 200px 4px #001111;
+    }
+    50% {
+      box-shadow: inset 0 0 200px 4px #000e09,
+                  inset 0 0 300px 6px #001a14;
+    }
+    100% {
+      box-shadow: inset 0 0 100px 2px #000912,
+                  inset 0 0 250px 5px #13001e;
+    }
+  } */
   
   .nav-links a {
-    margin-left: 20px;
-    margin-right: 10%;
+    margin-left: 15px;
+    margin-right: 10px;
+    font-size: 20px;
     text-decoration: none;
-    color: #333;
+    color: #f1ecf1;
     font-weight: 500;
   }
   
@@ -25,28 +45,29 @@
   .glowing-text {
     margin-left: 2%;
     margin-top: 1%;
+    margin-bottom: 1%;
     font-size: 40px;
     font-weight: bold;
     color: #ffffff; /* Keep text white */
-    animation: neonGlow 4s ease-in-out infinite alternate; /* Slower animation */
+    animation: neonGlow 4s ease-in-out infinite alternate; 
   }
   
-  @keyframes neonGlow {
+  /* @keyframes neonGlow {
     0% {
       text-shadow:
-        0 0 80px #3c225f,
-        0 0 160px #2e1385,
+        0 0 80px #100000,
+        0 0 160px #7f70b3,
         0 0 240px #0e16b6,
-        0 0 320px #19314e,
-        0 0 400px #082853;
+        0 0 320px #0e58b4,
+        0 0 400px #084fac;
     }
     50% {
       text-shadow:
-        0 0 80px #204e30,
-        0 0 160px #26503e,
-        0 0 240px #10554a,
-        0 0 320px #194540,
-        0 0 400px #164438;
+        0 0 80px #033e18,
+        0 0 160px #064a2c,
+        0 0 240px #02453a,
+        0 0 320px #074941,
+        0 0 400px #033024;
     }
     100% {
       text-shadow:
@@ -56,7 +77,7 @@
         0 0 320px #0b498f,
         0 0 400px #0c2342;
     }
-  }
+  } */
   
   
   

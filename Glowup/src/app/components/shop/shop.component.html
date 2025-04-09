@@ -1,0 +1,19 @@
+<div class="shop-container">
+    <aside class="sidebar">
+      <h3>Filters</h3>
+      <ul>
+        <li
+          *ngFor="let filter of filters"
+          [class.active]="filter === selectedFilter"
+          (click)="setFilter(filter)"
+        >
+          {{ filter }}
+        </li>
+      </ul>
+    </aside>
+  
+    <section class="items-grid">
+      <itemCard *ngFor="let item of items"><itemCard></itemCard></itemCard>
+    </section>
+  </div>
+  
