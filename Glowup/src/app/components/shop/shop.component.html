@@ -1,19 +1,28 @@
 <div class="shop-container">
-    <aside class="sidebar">
-      <h3>Filters</h3>
-      <ul>
+  <aside class="sidebar">
+    <ul class="main-filters">
+      <li
+        *ngFor="let filter of filters.slice(0, 4)" 
+        [class.active]="filter === selectedFilter"
+        (click)="setFilter(filter)">
+        {{ filter }}
+      </li>
+    </ul>
+
+    <div class="himher">
+      <ul class="special-filters">
         <li
-          *ngFor="let filter of filters"
+          *ngFor="let filter of filters.slice(4)"
+          class="special"
           [class.active]="filter === selectedFilter"
-          (click)="setFilter(filter)"
-        >
+          (click)="setFilter(filter)">
           {{ filter }}
         </li>
       </ul>
-    </aside>
-  
-    <section class="items-grid">
-      <itemCard *ngFor="let item of items"><itemCard></itemCard></itemCard>
-    </section>
-  </div>
-  
+    </div>
+  </aside>
+
+  <section class="items-grid">
+    <itemCard *ngFor="let item of items"></itemCard>
+  </section>
+</div>
